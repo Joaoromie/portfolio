@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0816">
+  <title>Portfólio | João Pedro Romie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/root.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+  <div class="background" aria-hidden="true"></div>
+
+  <nav class="navigation" aria-label="Navegação principal">
+
+    <a class="navigation__logo" href="#home" aria-label="João Romie, início">
+      JR
+    </a>
+
+    <a class="navigation__link navigation__link--active" href="#home" aria-label="Home">
+
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+
+      <span class="navigation__label">
+        Home
+      </span>
+
+    </a>
+
+    <a class="navigation__link" href="#skills" aria-label="Skills">
+
+      <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+      <span class="navigation__label">
+        Skills
+      </span>
+
+    </a>
+
+    <a class="navigation__link" href="#projetos" aria-label="Projetos">
+
+      <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i>
+      <span class="navigation__label">
+        Projetos
+      </span>
+
+    </a>
+
+    <a class="navigation__link" href="#contato" aria-label="Contato">
+
+      <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+      <span class="navigation__label">
+        Contato
+      </span>
+
+    </a>
+
+    <button class="navigation__theme" id="themeToggle" type="button" aria-label="Ativar modo claro"
+      aria-pressed="false" title="Ativar modo claro">☀</button>
+
+  </nav>
+
+  <main class="page">
+
+    <div class="page__container">
+
+      <section class="hero" id="home" aria-labelledby="hero-title">
+
+        <div class="hero__content">
+
+          <p class="badge">
+            <span class="badge__indicator"></span>
+            Disponível para oportunidades
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            João Pedro
+            <span class="hero__highlight">Romie</span>
+
+          </h1>
+
+          <p class="hero__role">Desenvolvedor em formação</p>
+          <div class="actions">
+
+            <a class="button button--primary" href="#projetos">
+
+              Ver projetos
+
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+
+            </a>
+
+            <a class="button button--ghost" href="#contato">
+              Entrar em contato
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="window window--photo">
+
+          <div class="window__bar">
+
+            <span class="window__dots" aria-hidden="true"><b></b><b></b><b></b></span>
+            joao-romie.png
+
+          </div>
+
+          <div class="photo__area">
+
+            <div class="photo">
+
+              <img class="photo-img" src="./assets/profile.jpeg" alt="">
+
+            </div>
+
+          </div>
+
+          <div class="photo__tags">
+
+            <span class="tag">HTML</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <p class="section__eyebrow">01 / skills</p>
+        <h2 class="section__title" id="skills-title">Habilidades</h2>
+        <div class="terminals">
+          <article class="window terminal terminal--hard">
+            <div class="window__bar">
+              <span class="window__dots" aria-hidden="true"><b></b><b></b><b></b></span>
+              <span class="window__title">hard-skills — zsh</span>
+            </div>
+            <div class="terminal__body">
+              <p class="terminal__prompt">
+                <span class="terminal__user">joao@portfolio</span>
+                <span class="terminal__path">~/skills</span> $
+                <span>cat hard-skills.txt</span>
+              </p>
+              <ul class="terminal__list">
+                <li>HTML Básico</li>
+                <li>CSS e JavaScript Básico</li>
+                <li>Python Básico</li>
+                <li>Lógica Básica</li>
+                <li>Manutenção e Montagem de computadores</li>
+              </ul>
+              <p class="terminal__comment"># 5 itens carregados</p>
+              <p class="terminal__prompt">
+                <span class="terminal__user">joao@portfolio</span>
+                <span class="terminal__path">~/skills</span> $
+                <span class="terminal__cursor"></span>
+              </p>
+            </div>
+          </article>
+          <article class="window terminal terminal--soft">
+            <div class="window__bar">
+              <span class="window__dots" aria-hidden="true"><b></b><b></b><b></b></span>
+              <span class="window__title">soft-skills — zsh</span>
+            </div>
+            <div class="terminal__body">
+              <p class="terminal__prompt">
+                <span class="terminal__user">joao@portfolio</span>
+                <span class="terminal__path">~/skills</span> $
+                <span>cat soft-skills.txt</span>
+              </p>
+              <ul class="terminal__list">
+                <li>Fluente em inglês — B2</li>
+                <li>Disposto a aprender e entrar no mercado</li>
+                <li>Comunicação clara e boa escrita</li>
+                <li>Pontual</li>
+              </ul>
+              <p class="terminal__comment">
+                # 4 itens carregados
+              </p>
+              <p class="terminal__prompt">
+                <span class="terminal__user">joao@portfolio</span>
+                <span class="terminal__path">~/skills</span> $
+                <span class="terminal__cursor"></span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projetos" aria-labelledby="projects-title">
+        <p class="section__eyebrow">
+          02 / projetos
+        </p>
+        <h2 class="section__title" id="projects-title">Projetos</h2>
+        <div class="projects">
+          <button class="project" type="button" data-project="0">
+            <span class="project__thumb"></span>
+            <span class="project__info">
+              <img class="project-img" src="./assets/solar.png" alt="">
+              <span class="project__title">Landing Page Solar</span>
+              <span class="project__description">Loja online de jogos digitais e acessórios, com catálogo completo,
+                preços e ofertas especiais.
+                Navegação simples e segura para encontrar e comprar seus jogos favoritos.</span>
+              <span class="project__open">
+                abrir detalhes
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </span>
+          </button>
+          <button class="project" type="button" data-project="1">
+            <span class="project__thumb"></span>
+            <span class="project__info">
+              <img class="project-img" src="./assets/louie.png" alt="">
+              <span class="project__title">
+                Landing Page Louie
+              </span>
+              <span class="project__description">
+                Site de restaurante com cardápio, informações sobre os pratos, localização e contato.
+                Design moderno e intuitivo para facilitar pedidos e reservas.
+              </span>
+              <span class="project__open">
+                abrir detalhes
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </span>
+          </button>
+          <button class="project" type="button" data-project="2">
+            <span class="project__thumb"></span>
+            <span class="project__info">
+              <img class="project-img" src="./assets/rooftop.png" alt="">
+              <span class="project__title">
+                Landing Page Rooftop
+              </span>
+              <span class="project__description">Portfólio de um fotógrafo para apresentar seus melhores trabalhos e
+                projetos.
+                Visual elegante, com galerias de fotos e informações para contato.</span>
+              <span class="project__open">
+                abrir detalhes
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="contato" aria-labelledby="contact-title">
+        <p class="section__eyebrow">03 / contato</p>
+        <h2 class="section__title" id="contact-title">Vamos conversar?</h2>
+        <div class="contact">
+          <form class="window contact__form" id="contactForm">
+            <label class="contact__label" for="nome">
+              nome
+            </label>
+            <input class="contact__input" id="nome" name="nome" type="text" placeholder="Seu nome" required>
+            <label class="contact__label" for="email">
+              e-mail
+            </label>
+            <input class="contact__input" id="email" name="email" type="email" placeholder="voce@email.com" required>
+            <label class="contact__label" for="msg">
+              mensagem
+            </label>
+            <textarea class="contact__input contact__input--textarea" id="msg" name="mensagem"
+              placeholder="Escreva sua mensagem..." required></textarea>
+            <button class="button button--primary" type="submit">
+              Enviar mensagem
+            </button>
+          </form>
+          <div class="social-links">
+            <a class="social-links__item" href="mailto:romiejoaopedro@email.com">
+              <span class="social-links__icon">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              </span>
+              <span>
+                <small>e-mail</small>
+                romiejoaopedro@email.com
+              </span>
+            </a>
+            <a class="social-links__item" href="https://github.com/joaoromie" target="_blank" rel="noreferrer">
+              <span class="social-links__icon">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </span>
+              <span>
+                <small>github</small>
+                github.com/joaoromie
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <span>© 2026 João Pedro Romie</span>
+        <span>feito com HTML, CSS e JavaScript</span>
+      </footer>
+    </div>
+  </main>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="window modal__window">
+      <div class="window__bar modal__bar"><span class="window__dots"
+          aria-hidden="true"><b></b><b></b><b></b></span><span id="modalFile">
+          projeto.md
+        </span>
+        <button class="modal__close" type="button" aria-label="Fechar">
+          ×
+        </button>
+      </div>
+      <div class="modal__thumb" id="modalThumb">
+        <img class="modal__img" src="./assets/rooftop.png" alt="">
+      </div>
+      <div class="modal__content">
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__description" id="modalDesc"> </p>
+        <div class="modal__tags" id="modalTags"></div>
+        <div class="actions">
+          <a class="button button--primary" href="#" id="projectLink">
+            Ver projeto
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a class="button button--ghost" href="#" id="sourceLink">
+            Código no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
